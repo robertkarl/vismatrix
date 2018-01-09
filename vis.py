@@ -16,3 +16,7 @@ def readstuff():
     plt.matshow(stuff)
     return stuff
 
+
+if __name__ == "__main__":
+    readstuff()
+
