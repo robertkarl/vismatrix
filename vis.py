@@ -1,6 +1,9 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import torch
+
+import axes3d as a3d
 
 def readstuff():
     bts = None
@@ -17,6 +20,13 @@ def readstuff():
     return stuff
 
 
-if __name__ == "__main__":
-    readstuff()
+def show_tensor(tensor):
 
+def main(argv):
+    a = torch.rand([3, 4, 4])
+    show_tensor(a)
+    return 0
+
+if __name__ == '__main__':
+    import sys;
+    return sys.exit(main(sys.argv[1:]))
